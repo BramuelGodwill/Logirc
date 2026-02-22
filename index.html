@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="70">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logirc Ltd — Your Vision, Our Code</title>
+
+  <!-- Bootstrap 5.1.3 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+  <!-- Owl Carousel 2.3.4 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <!-- Boxicons 2.1.1 -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ===== TOP BAR ===== -->
+  <div class="top-bar">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap gap-2">
+      <div class="top-bar-contact d-flex gap-3 flex-wrap">
+        <a href="/cdn-cgi/l/email-protection#711d1e161803121d051531161c10181d5f121e1c"><i class='bx bx-envelope'></i> <span class="__cf_email__" data-cfemail="84e8ebe3edf6e7e8f0e0c4e3e9e5ede8aae7ebe9">[email&#160;protected]</span></a>
+        <a href="tel:+254759917315"><i class='bx bx-phone'></i> +254 759 917 315</a>
+      </div>
+      <div class="top-bar-social d-flex gap-2">
+        <a href="https://www.facebook.com/share/1KrTxk9Sdq/" target="_blank"><i class='bx bxl-facebook'></i></a>
+        <a href="https://x.com/Logirc_" target="_blank"><i class='bx bxl-twitter'></i></a>
+        <a href="https://www.instagram.com/logirc?igsh=MWRhMWZsMjNwNnR3Mw==" target="_blank"><i class='bx bxl-instagram'></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+        <img src="img/logo.png" alt="Logirc Logo" height="45" />
+        <span class="brand-text">Logirc</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <i class='bx bx-menu' style="color:#fff;font-size:1.5rem;"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+          <li class="nav-item ms-lg-2">
+            <button class="btn btn-contact" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SLIDER ===== -->
+  <section class="hero-section" id="home">
+    <div class="owl-carousel hero-carousel">
+      <!-- Slide 1 -->
+      <div class="hero-slide" style="background-image: url('img/slide1.jpg');">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <div class="hero-tag">Next-Gen Digital Solutions</div>
+          <h1>Your Vision<br><span class="accent">Our Code</span></h1>
+          <p>Bringing ideas to life on the Web — from concept to deployment, we build what matters.</p>
+          <div class="hero-buttons d-flex gap-3 flex-wrap">
+            <a href="#pricing" class="btn btn-primary-custom">Get Started <i class='bx bx-right-arrow-alt'></i></a>
+            <a href="#portfolio" class="btn btn-outline-custom">Our Work <i class='bx bx-play-circle'></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="hero-slide" style="background-image: url('img/slide2.jpg');">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <div class="hero-tag">Where Innovation Thrives</div>
+          <h1>Coding at its<br><span class="accent">Finest</span></h1>
+          <p>Where Creativity meets Technology — we craft digital experiences that leave lasting impressions.</p>
+          <div class="hero-buttons d-flex gap-3 flex-wrap">
+            <a href="#pricing" class="btn btn-primary-custom">Get Started <i class='bx bx-right-arrow-alt'></i></a>
+            <a href="#portfolio" class="btn btn-outline-custom">Our Work <i class='bx bx-play-circle'></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about-section py-5" id="about">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <span class="section-tag">Who We Are</span>
+        <h2 class="section-title">About <span class="accent">Logirc</span></h2>
+        <p class="section-sub">A Kenyan tech powerhouse shaping the future of digital innovation.</p>
+      </div>
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6 order-lg-2">
+          <div class="about-image-wrap">
+            <img src="img/about.jpg" alt="About Logirc" class="img-fluid rounded-custom" />
+            <div class="about-badge">
+              <span class="badge-number">50+</span>
+              <span class="badge-label">Projects Done</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="about-boxes d-flex flex-column gap-4">
+            <div class="info-box">
+              <div class="info-icon"><i class='bx bx-glasses'></i></div>
+              <div>
+                <h4>Our Vision</h4>
+                <p>To be Africa's leading technology company, pioneering innovative digital solutions that empower businesses and communities across the continent and beyond.</p>
+              </div>
+            </div>
+            <div class="info-box">
+              <div class="info-icon"><i class='bx bx-target-lock'></i></div>
+              <div>
+                <h4>Our Objective</h4>
+                <p>To deliver cutting-edge, reliable, and scalable technology solutions that solve real-world problems, drive growth, and create measurable impact for our clients.</p>
+              </div>
+            </div>
+            <div class="info-box">
+              <div class="info-icon"><i class='bx bx-rocket'></i></div>
+              <div>
+                <h4>Our Mission</h4>
+                <p>To transform the digital landscape through innovative thinking, exceptional craftsmanship, and unwavering commitment to client success — one project at a time.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MILESTONES ===== -->
+  <section class="milestone-section py-5">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-6 col-md-3">
+          <div class="milestone-item">
+            <div class="milestone-number">5+</div>
+            <div class="milestone-label">Happy Clients</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="milestone-item">
+            <div class="milestone-number">2</div>
+            <div class="milestone-label">Staff Members</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="milestone-item">
+            <div class="milestone-number">50+</div>
+            <div class="milestone-label">Completed Projects</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="milestone-item">
+            <div class="milestone-number">5</div>
+            <div class="milestone-label">Running Projects</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services-section py-5" id="services">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <span class="section-tag">What We Do</span>
+        <h2 class="section-title">Our <span class="accent">Services</span></h2>
+        <p class="section-sub">Comprehensive digital solutions tailored to your unique needs.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><img src="img/icon1.png" alt="Game Dev" /></div>
+            <h4>Game Development</h4>
+            <p>Immersive gaming experiences crafted with precision — from 2D indie to complex multiplayer worlds.</p>
+            <a href="#" class="service-link">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><img src="img/icon2.png" alt="Web Dev" /></div>
+            <h4>Web Development</h4>
+            <p>Beautiful, fast, and scalable websites that convert visitors into loyal customers.</p>
+            <a href="#" class="service-link">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><img src="img/icon3.png" alt="Mobile Dev" /></div>
+            <h4>Mobile App Development</h4>
+            <p>Cross-platform mobile apps that deliver seamless experiences on iOS and Android.</p>
+            <a href="#" class="service-link">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><img src="img/icon4.png" alt="Database" /></div>
+            <h4>Database Management</h4>
+            <p>Robust database architecture and management to keep your data secure and performant.</p>
+            <a href="#" class="service-link">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><img src="img/icon5.png" alt="Consulting" /></div>
+            <h4>Tech Consulting</h4>
+            <p>Strategic technology guidance to help you make informed decisions and stay ahead of the curve.</p>
+            <a href="#" class="service-link">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><img src="img/icon6.png" alt="Networking" /></div>
+            <h4>Networking &amp; Infrastructure</h4>
+            <p>Enterprise-grade networking solutions that keep your operations connected and resilient.</p>
+            <a href="#" class="service-link">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO ===== -->
+  <section class="portfolio-section py-5" id="portfolio">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <span class="section-tag">Our Work</span>
+        <h2 class="section-title">Our <span class="accent">Portfolio</span></h2>
+        <p class="section-sub">A showcase of projects we're proud of — built with passion and purpose.</p>
+      </div>
+      <div class="owl-carousel portfolio-carousel">
+        <div class="portfolio-card">
+          <div class="portfolio-img-wrap">
+            <img src="img/project1.jpg" alt="Game Dev Project" />
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <span class="portfolio-cat">Game Development</span>
+                <h5>Logirc GAME</h5>
+                <a href="#" class="btn btn-sm btn-primary-custom mt-2">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-img-wrap">
+            <img src="img/project2.jpg" alt="Website Project" />
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <span class="portfolio-cat">Websites</span>
+                <h5>Logirc Official Website</h5>
+                <a href="#" class="btn btn-sm btn-primary-custom mt-2">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-img-wrap">
+            <img src="img/project3.jpg" alt="Mobile App Project" />
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <span class="portfolio-cat">Mobile Apps</span>
+                <h5>Logirc Mobile Platform</h5>
+                <a href="#" class="btn btn-sm btn-primary-custom mt-2">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEAM ===== -->
+  <section class="team-section py-5" id="team">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <span class="section-tag">The Minds Behind It</span>
+        <h2 class="section-title">Meet the <span class="accent">Team</span></h2>
+        <p class="section-sub">Passionate individuals driving digital transformation across Africa.</p>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-5 col-lg-4">
+          <div class="team-card">
+            <div class="team-img-wrap">
+              <img src="img/bramuel.jpg" alt="Bramuel Godwill" />
+              <div class="team-social">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-pinterest'></i></a>
+              </div>
+            </div>
+            <div class="team-info">
+              <h5>Bramuel Godwill</h5>
+              <span>Founder &amp; CEO</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-lg-4">
+          <div class="team-card">
+            <div class="team-img-wrap">
+              <img src="img/george.jpg" alt="George Ndungu" />
+              <div class="team-social">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-pinterest'></i></a>
+              </div>
+            </div>
+            <div class="team-info">
+              <h5>George Ndungu</h5>
+              <span>Co-Founder &amp; CTO</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <section class="reviews-section py-5" id="reviews">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <span class="section-tag">Testimonials</span>
+        <h2 class="section-title">What They <span class="accent">Say</span></h2>
+        <p class="section-sub">Real words from the people who know us best.</p>
+      </div>
+      <div class="owl-carousel reviews-carousel">
+        <div class="review-card">
+          <div class="review-stars">
+            <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'></i>
+          </div>
+          <p class="review-text">"Building Logirc from the ground up has been the most rewarding journey. Our commitment to innovation and excellence is what sets us apart in the Kenyan tech ecosystem."</p>
+          <div class="review-author">
+            <img src="img/bramuel.jpg" alt="Bramuel" />
+            <div>
+              <h6>Bramuel Godwill</h6>
+              <span>CEO, Logirc Ltd</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">
+            <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'></i>
+          </div>
+          <p class="review-text">"The technical depth of our team is unmatched. We're not just building software — we're crafting digital infrastructure that will power Africa's future for decades to come."</p>
+          <div class="review-author">
+            <img src="img/george.jpg" alt="George" />
+            <div>
+              <h6>George Ndungu</h6>
+              <span>CTO, Logirc Ltd</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">
+            <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'></i>
+          </div>
+          <p class="review-text">"Working at Logirc is an incredible experience. Every day brings new challenges and opportunities to push the boundaries of what's possible in tech development."</p>
+          <div class="review-author">
+            <img src="img/billy.jpg" alt="Billy" />
+            <div>
+              <h6>Billy</h6>
+              <span>Lead Developer, Logirc Ltd</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BLOG ===== -->
+  <section class="blog-section py-5" id="blog">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <span class="section-tag">Insights</span>
+        <h2 class="section-title">Latest from the <span class="accent">Blog</span></h2>
+        <p class="section-sub">Stay informed with the latest tech trends and industry insights.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="blog-card">
+            <div class="blog-img-wrap">
+              <img src="img/blog1.jpg" alt="Blog 1" />
+              <span class="blog-date">Mar 2024</span>
+            </div>
+            <div class="blog-body">
+              <span class="blog-cat">Web Design</span>
+              <h5>Web Design Trends in 2024</h5>
+              <p>Explore the evolving landscape of web design — from AI-generated interfaces to immersive scroll experiences that captivate users.</p>
+              <a href="#" class="blog-link">Read More <i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="blog-card">
+            <div class="blog-img-wrap">
+              <img src="img/blog2.jpg" alt="Blog 2" />
+              <span class="blog-date">Jan 2025</span>
+            </div>
+            <div class="blog-body">
+              <span class="blog-cat">Design</span>
+              <h5>Design Trends in 2025</h5>
+              <p>2025 brings bold typography, maximalist layouts, and neomorphism 2.0. Discover what's shaping the visual internet this year.</p>
+              <a href="#" class="blog-link">Read More <i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="blog-card">
+            <div class="blog-img-wrap">
+              <img src="img/blog3.jpg" alt="Blog 3" />
+              <span class="blog-date">Feb 2025</span>
+            </div>
+            <div class="blog-body">
+              <span class="blog-cat">Tech Trends</span>
+              <h5>Trends in Early 2025</h5>
+              <p>AI-first development, edge computing breakthroughs, and the rise of micro-frontends define the early 2025 tech narrative.</p>
+              <a href="#" class="blog-link">Read More <i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING ===== -->
+  <section class="pricing-section py-5" id="pricing">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <span class="section-tag">Transparent Pricing</span>
+        <h2 class="section-title">Our <span class="accent">Pricing</span></h2>
+        <p class="section-sub">Simple, honest pricing — no hidden fees, just results.</p>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-6 col-lg-4">
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <div class="pricing-icon"><i class='bx bx-rocket'></i></div>
+              <h4>Basic</h4>
+              <div class="pricing-price">$9.99<span>/mo</span></div>
+            </div>
+            <ul class="pricing-features">
+              <li><i class='bx bx-check'></i> 1 Website</li>
+              <li><i class='bx bx-check'></i> 5GB Storage</li>
+              <li><i class='bx bx-check'></i> Email Support</li>
+              <li><i class='bx bx-check'></i> Basic Analytics</li>
+              <li class="disabled"><i class='bx bx-x'></i> Custom Domain</li>
+              <li class="disabled"><i class='bx bx-x'></i> Priority Support</li>
+            </ul>
+            <a href="/cdn-cgi/l/email-protection#9cf0f3fbf5eefff0e8f8dcfbf1fdf5f0b2fff3f1a3efe9fef6f9ffe8a1defdeff5ffbcccf0fdf2bcd3eef8f9ee" class="btn btn-outline-custom w-100">Order Now</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="pricing-card featured">
+            <div class="pricing-badge">Most Popular</div>
+            <div class="pricing-header">
+              <div class="pricing-icon"><i class='bx bx-diamond'></i></div>
+              <h4>Premium</h4>
+              <div class="pricing-price">$19.99<span>/mo</span></div>
+            </div>
+            <ul class="pricing-features">
+              <li><i class='bx bx-check'></i> 5 Websites</li>
+              <li><i class='bx bx-check'></i> 25GB Storage</li>
+              <li><i class='bx bx-check'></i> Priority Support</li>
+              <li><i class='bx bx-check'></i> Advanced Analytics</li>
+              <li><i class='bx bx-check'></i> Custom Domain</li>
+              <li class="disabled"><i class='bx bx-x'></i> White Label</li>
+            </ul>
+            <a href="/cdn-cgi/l/email-protection#94f8fbf3fde6f7f8e0f0d4f3f9f5fdf8baf7fbf9abe7e1f6fef1f7e0a9c4e6f1f9fde1f9b4c4f8f5fab4dbe6f0f1e6" class="btn btn-primary-custom w-100">Order Now</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <div class="pricing-icon"><i class='bx bx-buildings'></i></div>
+              <h4>Business</h4>
+              <div class="pricing-price">$29.99<span>/mo</span></div>
+            </div>
+            <ul class="pricing-features">
+              <li><i class='bx bx-check'></i> Unlimited Websites</li>
+              <li><i class='bx bx-check'></i> 100GB Storage</li>
+              <li><i class='bx bx-check'></i> 24/7 Support</li>
+              <li><i class='bx bx-check'></i> Full Analytics Suite</li>
+              <li><i class='bx bx-check'></i> Custom Domain</li>
+              <li><i class='bx bx-check'></i> White Label</li>
+            </ul>
+            <a href="/cdn-cgi/l/email-protection#036f6c646a71606f776743646e626a6f2d606c6e3c707661696660773e4176706a6d66707023536f626d234c71676671" class="btn btn-outline-custom w-100">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer pt-5 pb-3">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <div class="col-lg-4">
+          <a class="footer-brand d-flex align-items-center gap-2 mb-3" href="#home">
+            <img src="img/logo.png" alt="Logirc Logo" height="40" />
+            <span>Logirc</span>
+          </a>
+          <p class="footer-tagline">Stay ahead in the digital world with Logirc!</p>
+          <div class="footer-social d-flex gap-2 mt-3">
+            <a href="https://www.facebook.com/share/1KrTxk9Sdq/" target="_blank"><i class='bx bxl-facebook'></i></a>
+            <a href="https://x.com/Logirc_" target="_blank"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.instagram.com/logirc?igsh=MWRhMWZsMjNwNnR3Mw==" target="_blank"><i class='bx bxl-instagram'></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-6">
+          <h6 class="footer-heading">Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-6">
+          <h6 class="footer-heading">Services</h6>
+          <ul class="footer-links">
+            <li><a href="#services">Game Dev</a></li>
+            <li><a href="#services">Web Dev</a></li>
+            <li><a href="#services">Mobile Apps</a></li>
+            <li><a href="#services">Consulting</a></li>
+            <li><a href="#services">Networking</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h6 class="footer-heading">Get In Touch</h6>
+          <div class="footer-contact">
+            <p><i class='bx bx-envelope'></i> <a href="/cdn-cgi/l/email-protection#375b58505e45545b435377505a565e5b1954585a"><span class="__cf_email__" data-cfemail="bfd3d0d8d6cddcd3cbdbffd8d2ded6d391dcd0d2">[email&#160;protected]</span></a></p>
+            <p><i class='bx bx-phone'></i> <a href="tel:+254759917315">+254 759 917 315</a></p>
+            <p><i class='bx bx-map'></i> Nairobi, Kenya</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex justify-content-center align-items-center">
+        <p>Copyright@2025. All rights Reserved - Logirc Ltd</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== CONTACT MODAL ===== -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content contact-modal-content">
+        <button type="button" class="btn-close-custom" data-bs-dismiss="modal" aria-label="Close">
+          <i class='bx bx-x'></i>
+        </button>
+        <div class="row g-0 h-100">
+          <div class="col-md-5 contact-bg-col" style="background-image: url('img/contact-bg.jpg');">
+            <div class="contact-bg-overlay">
+              <div class="contact-bg-content">
+                <h3>Let's Build<br>Something <span>Amazing</span></h3>
+                <p>Reach out today and let's turn your vision into reality.</p>
+                <div class="contact-bg-social d-flex gap-3 mt-4">
+                  <a href="https://www.facebook.com/share/1KrTxk9Sdq/" target="_blank"><i class='bx bxl-facebook'></i></a>
+                  <a href="https://x.com/Logirc_" target="_blank"><i class='bx bxl-twitter'></i></a>
+                  <a href="https://www.instagram.com/logirc?igsh=MWRhMWZsMjNwNnR3Mw==" target="_blank"><i class='bx bxl-instagram'></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7 contact-form-col">
+            <div class="contact-form-wrap">
+              <h4>Send Us a Message</h4>
+              <p class="mb-4">We typically respond within 24 hours.</p>
+              <form id="contactForm">
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <label class="form-label">First Name</label>
+                    <input type="text" class="form-control custom-input" placeholder="John" required />
+                  </div>
+                  <div class="col-sm-6">
+                    <label class="form-label">Last Name</label>
+                    <input type="text" class="form-control custom-input" placeholder="Doe" required />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-control custom-input" placeholder="john@example.com" required />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-control custom-input" rows="5" placeholder="Tell us about your project..." required></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary-custom w-100 py-3">Send Message <i class='bx bx-send'></i></button>
+                  </div>
+                </div>
+  
