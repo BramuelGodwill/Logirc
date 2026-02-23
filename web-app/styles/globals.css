@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-dark-950 text-gray-100 font-body;
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  /* Custom Scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-dark-900;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-dark-700 rounded-full;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-dark-600;
+  }
+
+  /* Glass Morphism */
+  .glass {
+    background: rgba(15, 23, 42, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Gradient Text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-400 via-accent-400 to-primary-600 bg-clip-text text-transparent;
+  }
+
+  /* Animated Background */
+  .animated-gradient {
+    background: linear-gradient(-45deg, #0ea5e9, #d946ef, #0284c7, #c026d3);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+
+  /* Chat Bubble */
+  .chat-bubble-user {
+    @apply bg-gradient-to-br from-primary-600 to-primary-700 text-white rounded-2xl rounded-tr-sm px-4 py-3 shadow-lg;
+  }
+
+  .chat-bubble-ai {
+    @apply bg-dark-800 text-gray-100 rounded-2xl rounded-tl-sm px-4 py-3 border border-dark-700 shadow-lg;
+  }
+
+  /* Button Styles */
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-500 hover:to-primary-600 text-white font-medium px-6 py-3 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply bg-dark-800 hover:bg-dark-700 text-gray-100 font-medium px-6 py-3 rounded-xl transition-all duration-300 border border-dark-700 hover:border-dark-600;
+  }
+
+  .btn-ghost {
+    @apply hover:bg-dark-800 text-gray-300 hover:text-white font-medium px-4 py-2 rounded-lg transition-all duration-300;
+  }
+
+  /* Input Styles */
+  .input-primary {
+    @apply bg-dark-900 border border-dark-700 text-gray-100 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 placeholder-gray-500;
+  }
+
+  /* Card Styles */
+  .card {
+    @apply bg-dark-900 border border-dark-800 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300;
+  }
+
+  /* Code Block Styles */
+  .code-block {
+    @apply bg-dark-950 border border-dark-800 rounded-xl p-4 font-mono text-sm overflow-x-auto custom-scrollbar;
+  }
+
+  /* Loading Animation */
+  .typing-indicator {
+    @apply flex space-x-1;
+  }
+
+  .typing-indicator span {
+    @apply w-2 h-2 bg-primary-500 rounded-full animate-pulse;
+    animation-delay: calc(var(--i) * 0.2s);
+  }
+
+  /* Sidebar */
+  .sidebar {
+    @apply fixed left-0 top-0 h-full w-64 bg-dark-900 border-r border-dark-800 transform transition-transform duration-300 z-40;
+  }
+
+  .sidebar.closed {
+    @apply -translate-x-full;
+  }
+
+  /* Toast Notification */
+  .toast {
+    @apply fixed bottom-4 right-4 bg-dark-800 border border-dark-700 text-white px-6 py-4 rounded-xl shadow-2xl animate-slide-up;
+  }
+
+  /* Markdown Styles */
+  .markdown-content {
+    @apply text-gray-300 leading-relaxed;
+  }
+
+  .markdown-content h1 {
+    @apply text-3xl font-bold mt-6 mb-4 text-white;
+  }
+
+  .markdown-content h2 {
+    @apply text-2xl font-bold mt-5 mb-3 text-white;
+  }
+
+  .markdown-content h3 {
+    @apply text-xl font-semibold mt-4 mb-2 text-white;
+  }
+
+  .markdown-content p {
+    @apply mb-4;
+  }
+
+  .markdown-content ul, .markdown-content ol {
+    @apply ml-6 mb-4;
+  }
+
+  .markdown-content li {
+    @apply mb-2;
+  }
+
+  .markdown-content code {
+    @apply bg-dark-800 px-2 py-1 rounded text-primary-400 font-mono text-sm;
+  }
+
+  .markdown-content pre {
+    @apply bg-dark-950 border border-dark-800 rounded-xl p-4 mb-4 overflow-x-auto;
+  }
+
+  .markdown-content pre code {
+    @apply bg-transparent p-0 text-gray-300;
+  }
+
+  .markdown-content a {
+    @apply text-primary-400 hover:text-primary-300 underline;
+  }
+
+  .markdown-content blockquote {
+    @apply border-l-4 border-primary-500 pl-4 italic my-4 text-gray-400;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom Selection */
+::selection {
+  @apply bg-primary-600 text-white;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
